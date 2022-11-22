@@ -43,27 +43,27 @@ public class Activity2 extends AppCompatActivity {
                     if (timeAfter<= 0.5){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        Toast.makeText(getApplicationContext(), "Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, vous etes trop rapide", Toast.LENGTH_LONG).show();
+                        ((TextView)findViewById(R.id.tvVar2)).setText("Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, vous etes trop rapide");
                         relativeLayout.setBackgroundResource(R.drawable.mister4);
                     }else if (timeAfter<= 0.6){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        Toast.makeText(getApplicationContext(), "Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, ça va c'est acceptable", Toast.LENGTH_LONG).show();
+                        ((TextView)findViewById(R.id.tvVar2)).setText("Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, c'est acceptable");
                         relativeLayout.setBackgroundResource(R.drawable.mister1);
                     }else if (timeAfter<= 0.8){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        Toast.makeText(getApplicationContext(), "Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, vous etes trop lent", Toast.LENGTH_LONG).show();
+                        ((TextView)findViewById(R.id.tvVar2)).setText("Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, c'est bof");
                         relativeLayout.setBackgroundResource(R.drawable.mister2);
                     }else if (timeAfter<= 1){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        Toast.makeText(getApplicationContext(), "Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, faites vous soigner", Toast.LENGTH_LONG).show();
+                        ((TextView)findViewById(R.id.tvVar2)).setText("Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, t'as fais expres avoue ?");
                         relativeLayout.setBackgroundResource(R.drawable.mister3);
                     }else if (timeAfter>= 1.25){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        Toast.makeText(getApplicationContext(), "Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, vous etes nul", Toast.LENGTH_LONG).show();
+                        ((TextView)findViewById(R.id.tvVar2)).setText("Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, t'es null en sah");
                         relativeLayout.setBackgroundResource(R.drawable.mister5);
                     }
 
@@ -88,6 +88,7 @@ public class Activity2 extends AppCompatActivity {
         /* function when the start button is clicked */
         button1.setOnClickListener(view -> {
             relativeLayout.setBackgroundResource(0);
+            ((TextView)findViewById(R.id.tvVar2)).setText("");
             ((TextView)findViewById(R.id.tvVar1)).setText("Cliquez d'abord sur Start, et attendez jusqu'à ce que la couleur de fond change.\n" +
                     "Dès qu'elle change, cliquez sur Stop");
             // generate a random number from 1-10
