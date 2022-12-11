@@ -13,6 +13,14 @@
         android:theme="@style/Theme.Relex"
         tools:targetApi="31">
         <activity
+            android:name=".Activity4"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Pendu"
             android:exported="false"
             android:parentActivityName=".MainActivity">

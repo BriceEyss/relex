@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class MainActivity extends AppCompatActivity {
-    private Button button, button1, button2;
+    private Button button, button1, button2,button3;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         button2 = (Button) findViewById(R.id.button2);
         button2.setOnClickListener(v -> openActivity4());
 
+
+        button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(v -> openActivity5());
+
     }
 
     public void openActivity2() {
@@ -42,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openActivity4() {
         Intent intent = new Intent(this, Pendu.class);
+        startActivity(intent);
+    }
+
+    public void openActivity5() {
+        Intent intent = new Intent(this, Activity4.class);
         startActivity(intent);
     }
 }

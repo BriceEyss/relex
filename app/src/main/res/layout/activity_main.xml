@@ -65,5 +65,25 @@
         android:layout_marginTop="243dp"
         android:text="open Game 3" />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="423dp"
+        android:text="Game 4" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="355dp"
+        android:text="open Game 4" />
+
 
 </RelativeLayout>
