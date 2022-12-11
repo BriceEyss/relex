@@ -52,14 +52,14 @@ public class Pendu extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void initGame(){
-        word="AAA";//generateword();
-        win=false;
+        word= generateword();
         error=0;
         win=false;
         found=0;
         listofletters=new ArrayList<>();
         letter_used.setText("");
         IV_hangman.setBackgroundResource(R.drawable.hangman1);
+        button_play.setText("Nombre de vie");
 
         ll_true.removeAllViews();
 
@@ -96,7 +96,7 @@ public class Pendu extends AppCompatActivity implements View.OnClickListener {
             if(!word.contains(letterfrominput)){
                 error++;
                 setImage(error);
-                //NumberLife(error);
+                NumberLife(error);
             }
             if( error == 6 ){
                 win=false;
@@ -164,9 +164,11 @@ public class Pendu extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
     }
+
     public void NumberLife(int error){
         int NbLife=7-error;
-        button_play.setText(NbLife);
+        String Nblifestring=Integer.toString(NbLife);
+        button_play.setText(Nblifestring);
     }
 
     public void createDialog(boolean win){
@@ -190,10 +192,10 @@ public class Pendu extends AppCompatActivity implements View.OnClickListener {
         builder.create().show();
     }
 
-    public List<String> GetlistOfWords(){
 
+    public List<String> GetlistOfWords(){
         try {
-            BufferedReader buffer = new BufferedReader(new InputStreamReader(getAssets().open("LISTEMOTS.txt")));
+            BufferedReader buffer = new BufferedReader(new InputStreamReader(getAssets().open("pendu_liste.txt")));
             String line;
             while ((line = buffer.readLine()) !=null){
                 listwords.add(line);
@@ -204,11 +206,11 @@ public class Pendu extends AppCompatActivity implements View.OnClickListener {
         }
         return listwords;
     }
+
     public String generateword(){
         listwords = GetlistOfWords();
         int random = (int) (Math.floor(Math.random()*listwords.size()));
-        String word = listwords.get(random).trim();
-        return word;
+        return listwords.get(random).trim();
     }
 
 }
