@@ -8,7 +8,6 @@
     tools:context=".Pendu">
 
 
-
     <ImageView
         android:id="@+id/IV_hangman"
         android:layout_width="200dp"
@@ -30,11 +29,11 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/PushEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ll_true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/PushEdit">
+        android:layout_centerHorizontal="true">
 
         <EditText
             android:id="@+id/text_type"
