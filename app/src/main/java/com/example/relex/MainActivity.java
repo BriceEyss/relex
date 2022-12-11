@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(v -> openActivity3());
 
         button2 = (Button) findViewById(R.id.button2);
-      //  button2.setOnClickListener(v -> openActivity4());
+        button2.setOnClickListener(v -> openActivity4());
+
     }
 
     public void openActivity2() {
@@ -38,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Activity3.class);
         startActivity(intent);
     }
-/*
+
     public void openActivity4() {
-        Intent intent = new Intent(this, Activity4.class);
+        Intent intent = new Intent(this, Pendu.class);
         startActivity(intent);
-    }*/
+    }
 }
