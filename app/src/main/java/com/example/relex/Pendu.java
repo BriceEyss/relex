@@ -39,6 +39,10 @@ public class Pendu extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getSupportActionBar().setTitle("Pendu");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         setContentView(R.layout.activity_pendu);
 
         ll_true =       (LinearLayout)  findViewById(R.id.ll_true);

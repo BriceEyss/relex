@@ -83,6 +83,7 @@ public class Activity2 extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Reflex");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         relativeLayout = findViewById(R.id.rlVar1);
 
         View b1 = findViewById(R.id.btVar1);
