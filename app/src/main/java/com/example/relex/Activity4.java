@@ -2,6 +2,7 @@ package com.example.relex;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 //import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -49,7 +50,13 @@ public class Activity4 extends AppCompatActivity implements View.OnClickListener
         buttonReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                for (int i = 0; i < 3; i++) {
+                    for (int j = 0; j < 3; j++) {
+                        buttons[i][j].setText("");
+                    }
+                }
+                roundCount = 0;
+                player1Turn = true;
             }
         });
     }
@@ -152,8 +159,8 @@ public class Activity4 extends AppCompatActivity implements View.OnClickListener
                 buttons[i][j].setText("");
             }
         }
-
         roundCount = 0;
         player1Turn = true;
     }
+
 }

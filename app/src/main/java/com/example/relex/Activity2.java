@@ -44,27 +44,27 @@ public class Activity2 extends AppCompatActivity {
                     if (timeAfter<= 0.5){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        ((TextView)findViewById(R.id.tvVar2)).setText("Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, vous etes trop rapide");
+                        ((TextView)findViewById(R.id.tvVar2)).setText("Vos réflexes ont pris " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, vous etes trop rapide");
                         relativeLayout.setBackgroundResource(R.drawable.mister4);
                     }else if (timeAfter<= 0.6){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        ((TextView)findViewById(R.id.tvVar2)).setText("Vos reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, c'est acceptable");
+                        ((TextView)findViewById(R.id.tvVar2)).setText("Vos réflexes ont pris " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, c'est acceptable");
                         relativeLayout.setBackgroundResource(R.drawable.mister1);
                     }else if (timeAfter<= 0.8){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        ((TextView)findViewById(R.id.tvVar2)).setText("Tes reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, c'est bof");
+                        ((TextView)findViewById(R.id.tvVar2)).setText("Tes réflexes ont pris " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, c'est bof");
                         relativeLayout.setBackgroundResource(R.drawable.mister2);
                     }else if (timeAfter<= 1){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        ((TextView)findViewById(R.id.tvVar3)).setText("Tes reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, t'as fais expres avoue ?");
+                        ((TextView)findViewById(R.id.tvVar3)).setText("Tes réflexes ont pris " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, t'as fais expres avoue ?");
                         relativeLayout.setBackgroundResource(R.drawable.mister3);
                     }else if (timeAfter> 1){
                         relativeLayout.setBackgroundResource(0);
                         // display reflex time in toast message
-                        ((TextView)findViewById(R.id.tvVar3)).setText("tes reflex ont prit " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, t'es null en sah");
+                        ((TextView)findViewById(R.id.tvVar3)).setText("Tes réflexes ont pris " + Float.parseFloat(String.format("%.5f",timeAfter)) + " secondes, t'es null en sah");
                         relativeLayout.setBackgroundResource(R.drawable.mister5);
                     }
                     // remove the background again
