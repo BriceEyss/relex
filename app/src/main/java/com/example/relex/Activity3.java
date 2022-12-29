@@ -17,7 +17,9 @@ public class Activity3 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Permet d'avoir le nom du mini jeu en haut de la page
         getSupportActionBar().setTitle("8 balls");
+        // Permet d'avoir le layout de l'activité3
         setContentView(R.layout.activity_3);
 
         // link all the variables with its id
