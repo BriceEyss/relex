@@ -37,7 +37,7 @@ public class Activity3 extends AppCompatActivity {
                 Random random = new Random();
                 int x = random.nextInt(4);
 
-                // choisi l'image grace au random
+                // choisi l'image dans le tableau grace au random
                 imageView.setImageResource(a[x]);
             }
         });
