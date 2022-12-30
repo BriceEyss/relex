@@ -23,7 +23,7 @@
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
-        android:text="open Game 1" />
+        android:text="REFLEXES" />
 
     <TextView
         android:id="@+id/textView2"
@@ -43,7 +43,7 @@
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="126dp"
-        android:text="open Game 2" />
+        android:text="SAINTE BOULE" />
 
     <TextView
         android:id="@+id/textView3"
@@ -63,7 +63,7 @@
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="243dp"
-        android:text="open Game 3" />
+        android:text="HANGMAN" />
 
     <TextView
         android:id="@+id/textView4"
@@ -83,7 +83,7 @@
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="355dp"
-        android:text="open Game 4" />
+        android:text="TIC TAC TOE" />
 
 
 </RelativeLayout>
